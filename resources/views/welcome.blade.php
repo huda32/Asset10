@@ -91,7 +91,7 @@
                                 <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Innola News News furniture production in indonesia aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                                    zahro is admin for metal construction
                                 </p>
                             </div>
 
