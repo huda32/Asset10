@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/mesin',[\App\Http\Controllers\MesinController::class,'index']);
+Route::get('/mesin/create',[\App\Http\Controllers\MesinController::class,'create']);
