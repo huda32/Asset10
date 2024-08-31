@@ -18,6 +18,8 @@
   <!-- Custom styles for this template-->
   <link href="{{ asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    <!-- Custom styles for this page -->
+    <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -123,9 +125,9 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="/mesin">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Data Mesin</span></a>
       </li>
 
       <!-- Divider -->
@@ -328,21 +330,10 @@
         </nav>
         <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
-
           <!-- Content Row -->
-          @yield('content')
-
-        </div>
-        <!-- /.container-fluid -->
-
+          <div class="container-fluid">
+            @yield('content')
+          </div>
       </div>
       <!-- End of Main Content -->
 
@@ -402,6 +393,13 @@
   <!-- Page level custom scripts -->
   <script src="{{ asset('js/demo/chart-area-demo.js')}}"></script>
   <script src="{{ asset('js/demo/chart-pie-demo.js')}}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
+  
+    <!-- Page level custom scripts -->
+    <script src="{{ asset('js/demo/datatables-demo.js')}}"></script>
 
 </body>
 
