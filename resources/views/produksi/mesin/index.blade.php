@@ -30,7 +30,7 @@
                         <th>Jenis</th>
                         <th>Kategori Mesin</th>
                         <th>Kondisi Mesin</th>
-                        <th>Teknisi</th>
+                        <th>Teknisii</th>
                     </tr>
                   </thead>
                   <tbody>
