@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Deka Sari Perkasa</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -31,12 +31,11 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-      </a>
+      <div class="sidebar-brand d-flex align-items-center justify-content-center" >
+        {{-- <img class="img-profile rounded-circle" src="{{ asset('img/logodsp.png')}}"> --}}
+
+        <div class="sidebar-brand-text mx-3">DSP INFO <sup></sup></div>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
@@ -118,7 +117,7 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/charts">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Charts</span></a>
       </li>

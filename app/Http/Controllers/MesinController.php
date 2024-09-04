@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Charts\KategoriMesinChart;
+use App\Charts\MerkMesinChart;
 use App\Models\Gedung;
 use App\Models\Jenis_mesin;
 use App\Models\Kategori_mesin;
@@ -13,15 +15,12 @@ use Illuminate\Http\Request;
 
 class MesinController extends Controller
 {
-    function index(){
+    function index(KategoriMesinChart $kategori_mesin, MerkMesinChart $merk_mesins){
         $mesins = Mesin::all(); 
-        // $gedungs = Gedung::all();
-        // $merk_mesins = Merk_mesin::all();
-        // $jenis_mesins = Jenis_mesin::all();
-        // $kategori_mesins = Kategori_mesin::all();
-        // $statuses = Status::all();
-        // dd($statuses);
-        return view('produksi.mesin.index',compact(['mesins']));
+        $chart_kategori = $kategori_mesin->build();
+        $chart_merk = $merk_mesins->build();
+        // dd($chart_merk);
+        return view('produksi.mesin.index',compact(['mesins','chart_kategori','chart_merk']));
     }
     function create(){
 
@@ -32,8 +31,8 @@ class MesinController extends Controller
         $kategori_mesins = Kategori_mesin::all();
         $statuses = Status::all();
         $teknisi_mesins = Teknisi_mesin::all();
-
-       return view('produksi.mesin.create',compact(['mesins','gedungs','merk_mesins','jenis_mesins',
+        $nomer = 0;
+       return view('produksi.mesin.create',compact(['mesins','nomer','gedungs','merk_mesins','jenis_mesins',
         'kategori_mesins','statuses', 'teknisi_mesins']));
     }
 

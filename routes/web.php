@@ -23,4 +23,5 @@ Route::get('/mesin/create',[\App\Http\Controllers\MesinController::class,'create
 Route::post('/mesin',[\App\Http\Controllers\MesinController::class,'store']);
 Route::get('/mesin/{id}',[\App\Http\Controllers\MesinController::class,'show']);
 
-// Route::get('/orders/{id}', [\App\Http\Controllers\OrderController::class,'show']);
+// Chard Squad
+Route::get('/charts',[\App\Http\Controllers\ChartController::class,'index']);

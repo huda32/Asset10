@@ -18,7 +18,7 @@
                 <table class="table table-striped table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                        {{-- <th>No</th> --}}
+                       
                         <th>Nama Mesin</th>
                         <th>Merk</th>
                         <th>Type</th>
@@ -31,13 +31,14 @@
                         <th>Kategori Mesin</th>
                         <th>Kondisi Mesin</th>
                         <th>Teknisi</th>
-                        {{-- <th>Nomer</th> --}}
-                        {{-- <th>Keterangan</th> --}}
                     </tr>
                   </thead>
                   <tbody>
+                    
                     @foreach ($mesins as $mesin)
+             
                         <tr>
+                           
                             <td><a href="/mesin/{{$mesin->id}}">{{ $mesin->nama_mesin}}</a></td>
                             <td>{{ $mesin->merk_mesin->merk_mesin}}</td>
                             <td>{{ $mesin->type_mesin}}</td>
@@ -50,14 +51,12 @@
                             <td>{{ $mesin->kategori_mesin->kategori_mesin}}</td>
                             <td>{{ $mesin->status->status}}</td>
                             <td>{{ $mesin->teknisi_mesin->nama_teknisi}}</td>
-                            {{-- <td>{{ $mesin->teknisi_mesin->nomer}}</td> --}}
-                            {{-- <td>{{ $mesin->keterangan}}</td> --}}
                         </tr>
                     @endforeach
                 </tbody>
                 </table>
               </div>
+             
     </div>
-    </div>
-
+  </div>
 @endsection

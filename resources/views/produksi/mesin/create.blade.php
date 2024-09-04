@@ -57,7 +57,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">KW</label>
-                <input name="kw" type="number" class="form-control"  placeholder="Kilo Watt">
+                <input name="kw" type="text" class="form-control"  placeholder="Kilo Watt">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Tahun</label>
