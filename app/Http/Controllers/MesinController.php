@@ -19,8 +19,9 @@ class MesinController extends Controller
         $mesins = Mesin::all(); 
         $chart_kategori = $kategori_mesin->build();
         $chart_merk = $merk_mesins->build();
+        $nomer = 1;
         // dd($chart_merk);
-        return view('produksi.mesin.index',compact(['mesins','chart_kategori','chart_merk']));
+        return view('produksi.mesin.index',compact(['mesins','nomer','chart_kategori','chart_merk']));
     }
     function create(){
 
@@ -31,8 +32,8 @@ class MesinController extends Controller
         $kategori_mesins = Kategori_mesin::all();
         $statuses = Status::all();
         $teknisi_mesins = Teknisi_mesin::all();
-        $nomer = 0;
-       return view('produksi.mesin.create',compact(['mesins','nomer','gedungs','merk_mesins','jenis_mesins',
+        
+       return view('produksi.mesin.create',compact(['mesins','gedungs','merk_mesins','jenis_mesins',
         'kategori_mesins','statuses', 'teknisi_mesins']));
     }
 

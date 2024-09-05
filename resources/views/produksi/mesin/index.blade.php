@@ -18,7 +18,7 @@
                 <table class="table table-striped table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                       
+                        <th>No</th>
                         <th>Nama Mesin</th>
                         <th>Merk</th>
                         <th>Type</th>
@@ -38,7 +38,7 @@
                     @foreach ($mesins as $mesin)
              
                         <tr>
-                           
+                          <td>{{ $nomer++}}</td>
                             <td><a href="/mesin/{{$mesin->id}}">{{ $mesin->nama_mesin}}</a></td>
                             <td>{{ $mesin->merk_mesin->merk_mesin}}</td>
                             <td>{{ $mesin->type_mesin}}</td>
