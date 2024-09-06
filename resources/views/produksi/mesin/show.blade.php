@@ -3,7 +3,6 @@
 @section('content')
 <div class="row">
     <div class="col-6">
-
         <!-- Project Card Example -->
         <div class="card shadow mb-4">
           <div class="card-header py-3">
@@ -65,15 +64,6 @@
                         <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $mesin->teknisi_mesin->nomer}}</div>
                     </li>
 
-                    {{-- <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                        <div class="d-flex align-items-center">
-                          <button class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-3 btn-sm d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
-                          <div class="d-flex flex-column">
-                            <h4 class="small font-weight-bold ">Merk Mesin <span class="float-right"></span></h4>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $mesin->merk_mesin->merk_mesin}}</div>
-                          </div>
-                        </div>                
-                    </li> --}}
                     
                 </ul>
             
@@ -82,7 +72,8 @@
 
         <!-- Color System -->
        
-
-      </div>
+           
+       
+    </div>
 </div>
 @endsection

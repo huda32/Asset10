@@ -38,7 +38,7 @@
                     @foreach ($mesins as $mesin)
              
                         <tr>
-                          <td>{{ $nomer++}}</td>
+                            <td>{{ $nomer++}}</td>
                             <td><a href="/mesin/{{$mesin->id}}">{{ $mesin->nama_mesin}}</a></td>
                             <td>{{ $mesin->merk_mesin->merk_mesin}}</td>
                             <td>{{ $mesin->type_mesin}}</td>
