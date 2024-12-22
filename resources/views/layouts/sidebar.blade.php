@@ -27,9 +27,9 @@
 
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tree"></i>
+            <i class="nav-icon fas fa-sliders-h"></i>
             <p>
-              UI Elements
+              Data Mesin Pabrik
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>

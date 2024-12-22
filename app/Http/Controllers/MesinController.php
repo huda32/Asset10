@@ -66,4 +66,19 @@ class MesinController extends Controller
         $mesin = Mesin::find($id);
        return view('produksi.mesin.show',compact('mesin'));
     }
+
+    // public function destroy($id, Request $request){
+        
+    //     $komputer = Computer::find($id);
+    //     $image = $request->code;
+    //     Storage::disk('public')->delete($image);
+    //     $komputer->delete();
+    //     return redirect('/computer')->with('success','Data Komputer Berhasil Dihapus');
+    // }
+
+    public function destroy($id, Request $request){
+        $mesin = Mesin::find($id);
+        $mesin->delete();
+        return redirect('/mesin')->with('success','Data Komputer Berhasil Dihapus');
+    }
 }

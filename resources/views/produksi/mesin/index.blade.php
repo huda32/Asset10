@@ -4,16 +4,25 @@
   <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('custom/custom.css')}}">
 @endpush
 @section('content')
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
+       <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      {{-- <h1 class="h3 mb-0 text-gray-800">Dashboard</h1> --}}
+      <a href="/mesin/create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fa fa-plus fa-sm text-white-50"></i> ADD</a>
+      <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    </div>
       <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">DataTable with default features</h3>
-        </div>
+        @if(session()->has('success'))   
+        
+          <div class="alert alert-success">{{ session('success')}}<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span></div>
+        
+        @endif
         <!-- /.card-header -->
         <div class="card-body">
           <table id="example1" class="table table-bordered table-striped ">
